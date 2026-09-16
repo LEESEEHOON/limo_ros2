@@ -24,7 +24,7 @@ def generate_launch_description():
 
     # finden path für Modell
     pkg_path = os.path.join(get_package_share_directory('limo_car'))
-    xacro_file = os.path.join(pkg_path, 'gazebo', 'ackermann_with_sensor.xacro')
+    xacro_file = os.path.join(pkg_path, 'gazebo', 'four_diff_with_sensor.xacro')
     robot_description_config = xacro.process_file(xacro_file)
 
     # Erstellt ein robot_state_publisher Node

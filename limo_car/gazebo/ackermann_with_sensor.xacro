@@ -9,6 +9,7 @@ andere Sensoren zusammengebaut werden und laden sie das Modell in Gazebo.-->
 <robot name="limo_ackermann" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <xacro:include filename="$(find limo_car)/gazebo/ackermann.xacro" />
+    <xacro:limo_ackermann />
     <xacro:include filename="$(find limo_car)/gazebo/sensor.xacro" />
 
 
